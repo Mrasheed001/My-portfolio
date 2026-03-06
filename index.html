@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdulrasheed Olayemi | Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    
+    <!-- NAVBAR -->
+   <div class="nav">
+     <nav>
+        <div class="logo">
+            <a href="https://github.com/mrasheed001"> <i style="padding-right: 5px;" class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/abdulrasheed-muhammed-a645a7261?utm_source=share_via&utm_con-tent=profile&utm_medium=mem-ber_ios"><i style="padding-right: 5px;" class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i style="padding-right: 5px;" class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.facebook.com/share/1Aw5BUeXtp/?mibextid=wwXIfr"><i style="padding-right: 5px;" class="fa-brands fa-facebook"></i></a>
+            
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul id="nav-links" >
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+   </div>
+
+    <!-- HERO -->
+    <section class="hero d-flex">
+    <div>
+        <h1>Welcome to My Portfolio</h1>
+        <h2>Hi, I'm Muhammed Abdulrasheed Olayemi,👋</h2> 
+        <p>Web Developer | Mobile App Enthusiast.</p>
+        <a href="/images/CVimg3.jpeg" download>
+        <button onclick="showMessage()" style=" border-radius: 25px;" >Click to download CV</button>
+        </a>
+    </div>
+    <div >
+        <img  class="hero-img" src="/images/img5.jpeg" alt=" my Hero image"  style="width: 70vh; height: 90vh; border-radius: 50%; border: none;">
+    </div>
+    <div class="bubbles">
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="d-flex" id="about">
+    <div>
+        <div class="about-img" style="margin: 20px 0;">
+        <img  src="/images/img5.jpeg" alt=" my Hero image"  style=" border-radius: 50%; border: none; width: 200px; height:300px">
+        </div>
+        <div style="margin: 120px 0;"  >
+                <h2 >About Me</h2>
+        <p>
+            Front-end web developer with practical experience building and deploying responsive websites using HTML, CSS, JavaScript, WordPress, and shopify. Experiened in developing business websites, ecommerce stores, and project-based applications. Passionate about clean code, usability, and continous learning, with a strong interest in growing as an impactful web developer in a collaborative tech environment. 
+        </p>
+        </div>
+    </div>
+    <div class="map">
+        <iframe
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyB2NIWI3Tv9iDPrlnowr_0ZqZWoAQydKJU&q=zango%20daji%20lokoja&maptype=roadmap"
+        class="map-frame"
+        allowfullscreen>
+        </iframe>
+    </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skill-box">
+            <div>HTML5</div>
+            <div>CSS3</div>
+            <div>Vannila JavaScript(ES6)</div>
+            <div>Wordpress</div> <br>
+            <div>Bootstrap</div>
+            <div>GitHub</div>
+            <div>shopify</div>
+            <div>Git version-control</div>
+        </div>
+    </section>
+
+    <!-- GALLERY -->
+    <section id="gallery">
+        <h2>My Friends</h2>
+        <div class="images">
+            <img src="images/img4.jpeg">
+            <img src="images/img1.jpeg">
+            <img src="images/img7.jpeg">
+            <img src="images/img6.jpeg">
+            <img src="images/img2.jpeg">
+        </div>
+    </section>
+
+
+    <div class="lightbox" id="lightbox">
+        <span style="margin-top: 50px;" class="close" onclick="closeLightbox()">×</span>
+        <img id="lightbox-img">
+        <div class="controls">
+            <button onclick="prevImage()">Prev</button>
+            <button onclick="nextImage()">Next</button>
+        </div>
+    </div>
+    
+    <footer id="contact" >
+        <!-- CONTACT -->
+        <h2>Contact Me</h2>
+        <i style="margin-bottom: 5px;" class="fa-solid fa-envelope"></i>
+        <a href="mailto:mabdulrasheed005@gmail.com"><p>Email: mabdulrasheed005@gmail.com</p></a> | <br> <a href="mailto:muhammedabdulrasheedolayemi@gmail.com">muhammedabdulrasheedOlayemi@gmail.com</a> <br>
+        <i style="margin:10px;" class="fa-solid fa-phone"></i>
+        <a href="tel:+2349163376538"> <p>Phone: +234 916 337 6538</p></a> <a href="tel:+2349053545216"> <p>Phone: +234 905 354 5216</p></a> 
+        <i style="margin-bottom: 5px;" class="fas fa-map-marker-alt"></i>
+        
+        <a href="https://www.google.com/maps?q=Your+Full+Address" target="_blank">
+            <p>Address: Area03 No.85 Zango daji, Lokoja, Nigeria</p>
+        </a>
+
+        <p>© 2026 Muhammed Abdulrasheed Olayemi</p> 
+    </footer>
+
+    <script src="app.js"></script>
+
+
+
+
+
+</body>
+</html>
